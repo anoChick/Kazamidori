@@ -10,9 +10,9 @@ createArrow();
 rotateArrow(20);
 function createArrow() {
   var arrowPoints = [ {"x": w*1/8, "y": h*1/2}, {"x": w*1/2, "y": h*1/8},
-                      {"x": w*7/8, "y": h*1/2}, {"x": w*5/8, "y": h*1/2},
-                      {"x": w*5/8, "y": h*7/8}, {"x": w*3/8, "y": h*7/8},
-                      {"x": w*3/8, "y": h*1/2}];
+                      {"x": w*7/8, "y": h*1/2}, {"x": w*5.3/8, "y": h*1/2},
+                      {"x": w*5.3/8, "y": h*7/8}, {"x": w*2.7/8, "y": h*7/8},
+                      {"x": w*2.7/8, "y": h*1/2}];
   var svg = d3.select("#show_arrow")
               .append("svg")
               .attr("width", w)
