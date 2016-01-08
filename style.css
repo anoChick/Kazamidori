@@ -1,9 +1,14 @@
 body {
-margin: 0;
-padding: 0;
-line-height:1.4;
-color:#5F1A42;
-background-color:#B2CF3E;
-font-family:Arial, sans-serif;
-font-size:0.9em;
+  margin: 0;
+  padding: 0;
+  line-height:1.4;
+  color:#5F1A42;
+  background-color:#B2CF3E;
+  font-family:Arial, sans-serif;
+  font-size:0.9em;
+}
+
+#lenText{
+  font-size:7.0em;
+  fill:#5F1A42;
 }

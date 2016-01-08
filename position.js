@@ -114,6 +114,7 @@ function positionDetect(io){
 				ael_text += "Elevation:" + ael.E + "<br>";
 				ael_text += "Length:" + ael.L + "<br>";
 		targetHeading = ael.A;
+		targetLength = ael.L;
 		document.getElementById("Shinjuku").innerHTML = ael_text;
 	}
 
