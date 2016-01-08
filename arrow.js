@@ -5,6 +5,7 @@ subColor1 = '#7379AE'
 subColor2 = '#5F1A42'
 var w = 400;
 var h = 400;
+var targetHeading = 0;
 createArrow();
 rotateArrow(20);
 function createArrow() {

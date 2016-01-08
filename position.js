@@ -113,6 +113,7 @@ function positionDetect(io){
 		var ael_text = "Azimas:" + ael.A + "<br>";
 				ael_text += "Elevation:" + ael.E + "<br>";
 				ael_text += "Length:" + ael.L + "<br>";
+		targetHeading = ael.A;
 		document.getElementById("Shinjuku").innerHTML = ael_text;
 	}
 

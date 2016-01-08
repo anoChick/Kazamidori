@@ -11,7 +11,10 @@ var arrowAngle = 0;
 window.ondeviceorientation = function(event) {
 	var compassHeading = event.webkitCompassHeading;
 	document.getElementById('heading').innerHTML = 'コンパスの向き： ' + compassHeading;
-  arrowAngle = -compassHeading;
+  arrowAngle = targetHeading-compassHeading;
+  if(arrowAngle < 0){
+    arrowAngle = 360 + arrowAngle;
+  }
   rotateArrow(arrowAngle);
 
 	var compassAccuracy = event.webkitCompassAccuracy;
