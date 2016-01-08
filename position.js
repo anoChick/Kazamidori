@@ -71,6 +71,9 @@ function ecef2enu(myPos, myEcef, friEcef){
 
 function enu2ael(enu){
 	az = Math.atan2(enu.E, enu.N) / Math.PI * 180;
+	if(az < 0){
+		az = 360 + az
+	}
  	enLen = Math.sqrt(Math.pow(enu.E,2)+Math.pow(enu.N,2));
 	el = Math.atan2(enLen, enu.U) / Math.PI * 180;
 	len = Math.sqrt(Math.pow(enLen,2)+Math.pow(enu.U,2));
