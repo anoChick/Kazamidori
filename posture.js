@@ -7,9 +7,12 @@ window.addEventListener('devicemotion', function(e) {
 		document.getElementById('motion').textContent = [acc.x.toFixed(3), acc.y.toFixed(3), acc.y.toFixed(3)];
 });
 
+var arrowAngle = 0;
 window.ondeviceorientation = function(event) {
 	var compassHeading = event.webkitCompassHeading;
 	document.getElementById('heading').innerHTML = 'コンパスの向き： ' + compassHeading;
+  arrowAngle = -compassHeading;
+  rotateArrow(arrowAngle);
 
 	var compassAccuracy = event.webkitCompassAccuracy;
 	document.getElementById('headingAccuracy').innerHTML = 'コンパスの正確性： ' + compassAccuracy;

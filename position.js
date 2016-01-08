@@ -87,7 +87,6 @@ function enu2ael(enu){
 //				Altitude [m]
 function getVector(myPos, friPos){
 	myEcef = wgs2ecef(myPos);
-	console.log(myEcef);
 	friEcef = wgs2ecef(friPos);
 	enu = ecef2enu(myPos, myEcef, friEcef);
 	ael = enu2ael(enu);
@@ -138,7 +137,6 @@ function positionDetect(io){
 		navigator.geolocation.clearWatch(watchID);
 	}else{
 		if (navigator.geolocation) {
-			alert('位置情報がオンだよ');
 			watchID = navigator.geolocation.watchPosition(successCallback, errorCallback);
 		} else {
 			alert('位置情報をオンにしてね');
