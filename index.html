@@ -3,10 +3,17 @@
   <meta charset="utf-8">
   <script src="//d3js.org/d3.v3.min.js"></script>
   <script type='text/javascript' src='position.js'></script>
+  <script type='text/javascript' src='posture.js'></script>
 </head>
 <body onload="positionDetect(1)">
   <div id="show_result"></div>
+  <p>新宿まで…</p>
   <div id="Shinjuku"></div>
+  <p>方位</p>
+  <div id="orientation"></div>
+  <p>姿勢</p>
+  <div id="motion"></div>
+  <form>
   <form>
     <button type="button" onclick="positionDetect(0)"> 更新を止める </button>
   </form>
