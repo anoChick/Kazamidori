@@ -64,7 +64,7 @@ function ecef2enu(myPos, myEcef, friEcef){
 	lat = myPos.lat;
 	lon = myPos.lon;
 	angle_mat = dot(dot(Rz(90),Ry(90-lat)), Rz(lon));
-	var ENU = dot(angle_mat, [[myEcef.X - friEcef.X], [myEcef.Y - friEcef.Y], [myEcef.Z - friEcef.Z]]);
+	var ENU = dot(angle_mat, [[friEcef.X - myEcef.X], [friEcef.Y - myEcef.Y], [friEcef.Z - myEcef.Z]]);
 	var enu = {E: ENU[0], N: ENU[1], U: ENU[2]};
 	return enu;
 }
