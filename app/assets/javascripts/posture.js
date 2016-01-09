@@ -3,8 +3,9 @@ window.addEventListener("deviceorientation", function(e) {
 });
 
 window.addEventListener('devicemotion', function(e) {
-		var acc = e.acceleration;
-		document.getElementById('motion').textContent = [acc.x.toFixed(3), acc.y.toFixed(3), acc.y.toFixed(3)];
+  console.log(e);
+  var acc = e.acceleration;
+  document.getElementById('motion').textContent = [acc.x.toFixed(3), acc.y.toFixed(3), acc.y.toFixed(3)];
 });
 
 var arrowAngle = 0;
