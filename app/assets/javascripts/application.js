@@ -12,6 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require arrow
-//= require position
-//= require posture
+//= require action_cable
+//= require kazamidori
+//= require channels
